@@ -1,0 +1,79 @@
+body {
+       background-color: #88ff99;
+     }
+
+
+h1 {
+   text-align: center;
+   }
+
+
+p.butao1{
+        text-align: center;
+       }
+
+
+p#butako1 {
+            text-align: center;
+          }
+
+
+
+p#butako2 {
+            text-align: center;
+          }
+
+
+
+
+h2 { background-color: black;
+     color: white;
+     text-align: center;
+     width: 500px;
+     border: 5px solid white;
+     margin: 0 auto;
+  }
+     
+
+p.butao2 {
+           text-align: center;
+        }
+
+
+
+p.butao3 {
+           text-align: center;
+           color: black;
+           font-weight:bold;
+        }
+
+     
+p.butao4 {
+           text-align: center;
+           color: black;
+           font-weight: bold;
+          }
+
+
+a:link {
+         color: black;
+         background-color: yellow;
+       }
+
+
+a: visited {
+              color: purple;
+              background-color: white;
+           }
+
+
+a: hover {
+          color: white;
+          font-weight: bold;
+        }
+
+
+a: active {
+            color: blue;
+          }
+

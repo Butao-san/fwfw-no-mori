@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<head>
+     <title>ふわふわの森</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="keywords" content="ぶたお, ぶたこ, 豚,　ふわふわの森," >
+     <meta name="description" content="ふわふわの森に住む、愉快なぶたお一家を紹介するホームページです">
+     <meta name="ぶたお">
+     <meta charset="utf-8">
+     <meta http-equiv="Pragma" content="no-cache">
+     <meta http-equiv="Cache-Control" content="no-cache"> 
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+　　　<style>
+      body { 
+        
+           background-image: url("mori.png"), url("ant.png"), url("kappa.png"),url("ladybird.png"), url("banana.png"), url("pig.png"),url("MAY.png");
+           background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,no-repeat,no-repeat;
+           background-size:100px 100px, 100px 100px, 100px 100px, 100px 100px, 100px 100px, 100px 100px,100px 100px;
+           background-position: right top, right bottom,left top, center top, 100% 30%,   100% 50%,    100% 70%;
+
+          } 
+
+
+
+      p#pig1 {
+               text-align: center;
+             }
+
+      p.hiro {
+               text-align: right;
+               color: black;
+               font-size: 100%;
+              }
+
+
+      p#20151102 {
+                  text-align: right;
+                  color: black;
+                  font-size; 100%;
+                }
+       
+             
+　　　　　  
+
+
+       table, tr,td,th{
+                      border: 5px inset black;
+                      font-size: 100%;
+                      table-layout:fixed;
+                      box-sizing:border-box;
+               }
+
+       p.pig2{
+              color: white;
+              font-weight: bold;
+              background-color: black;
+              max-width: 100%;
+              padding: 10px;
+              border: 5px solid orange;
+              margin: 0;
+              }
+
+    p.pig3{
+              color: white;
+              font-weight: bold;
+              background-color: black;
+              max-width: 100%;
+              padding: 10px;
+              border: 5px solid orange;
+              margin: 0;
+              }
+
+       p.pig6{
+              color: white;
+              font-weight: bold;
+              background-color: black;
+              width:500;
+              padding: 10px;
+              border: 5px solid white;
+              margin: 0px;
+             }
+
+       p#pig4{
+              color: white;
+              font-weight:bold;
+              background-color: black;
+              width:600px;
+              padding: 10px;
+              border: 5px solid orange;
+              margin: 0;
+              }
+
+　　　p.pig5{
+             text-decoration: underline;
+             }
+
+      p#butakocar{
+                  font-size: 20px;
+                  color: black;
+                  }
+
+
+      a:link{
+             color: #0055FF;
+            }
+
+
+      a:visited{
+                color: #FF55FF;
+               }
+
+      a:hover{
+               color: #00FF55;
+               font-weight: bold;
+             } 
+
+
+      a:active{
+               color: black;
+              }
+
+     
+
+     #pig7{
+           background-color:black;
+           color:white;
+           font-weight: bold;
+           max-width;100%
+           padding:5px;
+           border: 5px solid orange;
+           }
+            
+
+     </style>
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+      <div class = "w3-container w3-blue">
+       <h1>ふわふわの森</h1>
+
+<h3>ふわふわの森に住む、『ぶたお一家』のホームページです。</h3>
+
+<p class="hiro">最終更新日:2022年8月17日</p>
+<p class="hiro">
+               <a href="#butaonikki">更新内容1：ぶたお日記</a>
+</p>
+
+<br>
+
+
+
+　　<div class = "w3-panel" w3-left-align">
+      <h3><a id="kazokusyokai">1、家族紹介</a></h3>
+    </div>
+
+   　<div class = "w3-panel">
+     <table>
+ <tr>
+   <th>名前</th>
+   <th>似顔絵</th>
+   <th>紹介</th>
+ </tr>
+ 
+
+ <tr>
+   <td>
+   <pre><mark>ぶたお&#x264a;</mark></pre>
+   押してね=><button type="button" onclick="butao_question()">ぶたおQ</button>
+  </td>
+       <script>
+       "use strict";
+       function butao_question() {
+       const butaoanswer = window.prompt("ぶたおが毎朝飲んでいるものは？") ;
+       if (butaoanswer ==="プロテイン") {
+        window.alert("正解!!");
+       } else {
+       window.alert("違うよ");
+       }
+        }
+       </script>
+
+   <td>
+   <img src="butao4.png"  alt="ぶたお" title="ぶたお" style="width:120px; height:120px;">
+   あなたのお名前は?==><input type="text" id="fName">
+   <button type="button" onclick="nValid()">実行</button>
+   <p id="vResult"></p>
+   </td>
+
+   <script>
+   function nValid() {
+   var x,text;
+
+   //Get the value of input feild with id fName
+   x = document.getElementById("fName").value;
+
+  //If validate if guest is someone in my family or not
+  if (x==="ぶたお" || x==="ブタオ" || x==="ぶた男" || x==="ブタ男" || x==="ブタコ" || x==="ブタ子" || x==="ぶたこ"|| x==="ぶた子"
+　　　 || x==="ブタミ" || x==="ブタ美" || x==="ぶたみ"|| x==="ぶたろー"|| x==="ブタロー") {
+     text = "家族だ!";
+     } else {
+     text = "ゲストさんですね!";
+　　}
+     document.getElementById("vResult").innerHTML = text;
+   }
+ </script>
+
+
+   <td>
+　　　<a href="butao_introduction.html" target="_blank"><pre>ぶたおの紹介はこちら！</pre></a>
+ 　</td>
+
+</tr>
+
+
+
+
+
+  <tr>
+    <td>
+    <pre><mark>ぶたこ&#x2648;</mark></pre>
+　　押してね=><button type="button" onclick = "butako_function()">ぶたこQ</button>
+　　</td>
+
+          <script>
+           "use strict";
+            function butako_function() {
+             const butakoanswer = window.prompt("最近のぶたこは?　ヒント：ぺ〇こ");
+             if (butakoanswer === "ぺきこ") {
+             window.alert("大正解!");
+             } else{
+             window.alert("違うよ!怒られるよ！");
+              }
+                 }
+           </script>
+
+    <td><p><img src="butako.png" alt="ぶたこ" title="ぶたこ"  style="width:120px; height:120px;"></p>
+        <p><img src="pochama2.png" alt="ポッチャマ??" title="ポッチャマ??" style="width:150px; height:150px;"></p>
+      
+        <p id="butakocar">↓ぶたこはこのぶたこカーに乗ってお出かけしたいらしい</p>
+       <img src="butakocar.png" alt="ぶたこカー"title="ぶたこカー" style="width:120px; height:120px;">
+       
+    </td>
+
+    <td>
+        <a href="butako_introduction.html" target="_blank"><pre>ぶたこの紹介はこちら！</pre></a>
+   </td>
+  </tr>
+
+
+
+
+
+  <tr>
+   　  <td><pre><mark>ぶたみ&#x2648;</mark></pre>
+押してね=><button type="button" onclick="butami_function()">ぶたみQ</button>
+       </td>
+
+             <script>
+              "use srtict";
+               function butami_function() {
+              const butamianswer = window.prompt("ぶたみの好きな歌手は? ヒント=>LI〇A");
+              if (butamianswer === "LISA") {
+              window.alert("当たりだよ～。ちなみに不正解の場合は・・・");
+              } else {
+              open("https://www.youtube.com/channel/UCqEfdEvLG5oQWNYlDQrGlKw","blank");
+              }
+               }
+             </script>
+
+   　  <td><img src="aochan.png" alt="ぶたみ" title="ぶたみ"  style="width:120px; height:120px;">
+           <img src="butami_introdiction_picture.png" alt="にゃんちゃん" title="にゃんちゃん" style="width:120px; height:120px;"</td>
+
+    　 <td>
+　　　　　　<a href="butami_introduction.html" target="_blank"><pre>ぶたみの紹介はこちら！</pre></a>
+　　　 </td>
+  </tr>
+
+
+
+
+
+ <tr>
+   <td>
+   <pre><mark>ぶたろー&#x1f476;</mark></pre>
+   押してね=><button type="button" onclick="butaro_function()">ぶたろQ</button>
+   </td>
+
+   <script>
+   "use strict";
+    function butaro_function() {
+    const butaroanswer = window.prompt("ぶたろーが大好きなものは？　ヒント：〇〇〇");
+    if (butaroanswer === "くるま") {
+    window.alert("正解！おもちゃたくさんあるよ。");
+    } else {
+    open("https://www.takaratomy.co.jp/products/tomica/","blank");
+    }
+     }
+    </script>
+
+   <td><p><img src="2016.11.18.png"  alt="taro" title="ブタロー"  style="width:120px; height:120px;">
+          <img src="butaro_introduction_picture.png" alt="ブタロー" title="ブタロー" style="width:120px; height:120px;">
+          </p></td>
+　　　　
+   </td>
+
+   <td>
+       <a href="butaro_introduction.html" target="_blank"><pre>ブタローの紹介はこちら！</pre></a>
+   </td>
+ </tr>
+
+
+　<tr>
+  　　 <td>
+　　　　<pre><mark>ぶためろ&#x1f47b;</mark></pre>
+<button type="button" onclick="butamero_function()">ぶためろの正体は・・</button>
+　　　　</td>
+
+        <script>
+        "use strict";
+        function butamero_function() {
+        open("https://www.youtube.com/channel/UCEdvpU2pFRCVqU6yIPyTpMQ","blank");
+        }
+        </script>
+
+  
+　 　　<td><img src="butamello.jpg"  alt="taro" title="ブタメロ"  style="width:120px; height:120px;"></td>
+
+  　　 <td>
+       　　<a href="butamero_introduction.html" target="_blank"><pre>ブタメロの紹介はこちら！</pre></a>
+  　　 </td>
+ 　</tr>
+</table>
+         </div>
+
+
+
+
+
+
+
+<div class = "w3-panel w3-topbar w3-bottombar w3-rightbar w3-leftbar w3-border-pink">
+<h3>2、ぶたおさんの音楽ページ 2016/5/2更新</h3>
+</div>
+<div class= "w3-panel">
+<h4>ぶたおさんは音楽が好きなので、好きな曲を<a href="butao_recommended_songs.html" target="blank">こちらのページで紹介しています。</a><br>
+自己満ワールド全開です。</h4>
+</div>
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+<p class="pig2"><a id="butaonikki">ぶたお日記</a></p>
+
+<p id="pig8"><a href="ぶたお日記.html" target="_blank">こちらで日記を公開しています。</a>
+<br>
+最終更新日_20220817</p>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<p class="pig2"><a id="butao4koma">ぶたお４コマ劇場！！</a></p>
+
+<a href="butao_4koma.html" target_"blank">４コマ掲載始めました。20190324更新!</a>
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="pig3"><a id="butakogoroku">ぶたこ　語録</a></p>
+<a href="butako_goroku.html" target_"blank">ぶたこが使用する不思議な言葉とその定義を紹介します。20181230更新!</a>
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="pig2"><a id="BUTAKOSYASHIN">ぶたこ写真館</a></p>
+
+<p id="pig8"><a href="BUTAKO_SYASHINKAN.html" target="_blank">ぶたこさんが撮影したナイスな写真を公開中！</a>
+<br>
+</p>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
